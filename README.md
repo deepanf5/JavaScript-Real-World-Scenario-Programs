@@ -1,7 +1,7 @@
 # JavaScript-Real-World-Scenario-Programs
 
 
-<h1>1.You get data from an API: filter by Active users only and return their names</h1>
+<h2>1.You get data from an API: filter by Active users only and return their names</h2>
 
 <pre>
 const users = [
@@ -26,5 +26,33 @@ console.log(filterBy(users))
 
 </pre>
 
+<h2>2.Calculate the total cart value 
+Add 10% tax
+Return the final amount
+from this cart item </h2>
+
+<pre>
+const cart = [
+  { name: "Shirt", price: 20, quantity: 2 },
+  { name: "Shoes", price: 50, quantity: 1 },
+  { name: "Cap", price: 10, quantity: 3 }
+];</pre>
+
+Solution: 
+
+<pre>
+const cart = [
+  { name: "Shirt", price: 20, quantity: 2 },
+  { name: "Shoes", price: 50, quantity: 1 },
+  { name: "Cap", price: 10, quantity: 3 }
+];
+
+let calculateTotal = (cart) => {
+let total =  cart.reduce((acc,item) => (item.price * item.quantity) + acc,0)    
+return total +  (total * 10 ) / 100
+}
+
+console.log(calculateTotal(cart));
+</pre>
 
 
