@@ -101,6 +101,7 @@ Show message "Processing..."
 Re-enable after 3 seconds
 </h2>
 
+Solution:
 <pre>
 function update() {
   const btn = document.getElementById('btn')
