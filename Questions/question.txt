@@ -27,3 +27,11 @@ Email must include @
 Password must be at least 8 characters
 
 Return "Valid" or proper error message
+
+4.Prevent Multiple Button Clicks
+
+You have a "Submit" button.
+Disable button after first click
+Show message "Processing..."
+
+Re-enable after 3 seconds

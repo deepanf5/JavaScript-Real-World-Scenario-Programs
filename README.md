@@ -91,3 +91,27 @@ function validateFields(email,password) {
  
 </pre>
 
+<h2>
+4.Prevent Multiple Button Clicks
+
+You have a "Submit" button.
+Disable button after first click
+Show message "Processing..."
+
+Re-enable after 3 seconds
+</h2>
+
+<pre>
+function update() {
+  const btn = document.getElementById('btn')
+  btn.disable = true
+  btn.innerText = "Processing"
+  setTimeout(() => {
+    console.log("Form submitted!");
+    btn.disabled = false;
+    btn.innerText = "Submit";
+  },2000)
+
+}
+</pre>
+
