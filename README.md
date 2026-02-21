@@ -41,12 +41,6 @@ const cart = [
 Solution: 
 
 <pre>
-const cart = [
-  { name: "Shirt", price: 20, quantity: 2 },
-  { name: "Shoes", price: 50, quantity: 1 },
-  { name: "Cap", price: 10, quantity: 3 }
-];
-
 let calculateTotal = (cart) => {
 let total =  cart.reduce((acc,item) => (item.price * item.quantity) + acc,0)    
 return total +  (total * 10 ) / 100
