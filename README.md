@@ -1,7 +1,7 @@
 # JavaScript-Real-World-Scenario-Programs
 
 
-<h1>1.You get data from an API: filter only by their names</h1>
+<h1>1.You get data from an API: filter by Active users only and return their names</h1>
 
 <pre>
 const users = [
