@@ -18,11 +18,13 @@ const users = [
   { id: 2, name: "Sara", active: false },
   { id: 3, name: "Mike", active: true }
 ];
-</pre>
-
 
 const filterBy = (users) => {
      return users.filter((user) =>  user.active).map((user) => user.name)
 }
 console.log(filterBy(users))
+
+</pre>
+
+
 
