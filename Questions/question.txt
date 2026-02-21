@@ -16,3 +16,14 @@ const cart = [
   { name: "Shoes", price: 50, quantity: 1 },
   { name: "Cap", price: 10, quantity: 3 }
 ];
+
+3. Scenario 2: Form Validation
+
+You’re building a signup form.
+
+Write a function that:
+Accepts email and password
+Email must include @
+Password must be at least 8 characters
+
+Return "Valid" or proper error message

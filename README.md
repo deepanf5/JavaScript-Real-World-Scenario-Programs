@@ -49,4 +49,45 @@ return total +  (total * 10 ) / 100
 console.log(calculateTotal(cart));
 </pre>
 
+<h2>Scenario 2: Form Validation
+
+You’re building a signup form.
+
+Write a function that:
+Accepts email and password
+Email must include @
+Password must be at least 8 characters
+
+Return "Valid" or proper error message</h2>
+
+Solution:
+
+<pre>
+function onSubmit() {
+  event.preventDefault();
+  const name = document.getElementById('name').value
+  const email = document.getElementById('email').value
+   const password = document.getElementById('password').value
+   const result = validateFields(email, password);
+  if (result === "Valid") {
+    console.log("Form submitted successfully");
+  } else {
+    console.error(result);
+  }
+}
+
+function validateFields(email,password) {
+  if (!email.includes('@')) {
+    return "Invalid email. Must include @";
+  }
+
+  if (password.length < 8) {
+    return "Password must be at least 8 characters";
+  }
+
+  return "Valid";
+}
+  
+ 
+</pre>
 
