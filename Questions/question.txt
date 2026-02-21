@@ -5,3 +5,14 @@ const users = [
   { id: 2, name: "Sara", active: false },
   { id: 3, name: "Mike", active: true }
 ];
+
+2. Calculate the total cart value 
+Add 10% tax
+Return the final amount
+from this cart item 
+
+const cart = [
+  { name: "Shirt", price: 20, quantity: 2 },
+  { name: "Shoes", price: 50, quantity: 1 },
+  { name: "Cap", price: 10, quantity: 3 }
+];
